@@ -1,8 +1,8 @@
 // Assignment code here
 var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R", "S","T","U","V","W","X","Y","Z"];
-var aNumbers = [1,2,3,4,5,6,7,8,9,0];
-var specialCharacters = ["!","@","#","$","%","&","*"];
+var aNumbers = "1234567890";
+var specialCharacters = "!@#$%^&*()"
 
 
 function generatePassword(){
@@ -27,8 +27,16 @@ var passLength = window.prompt("Pick between 8-128 for a password")
  var sCharacters = window.confirm("Would you like Special Characters")
 
 
-
 }
+
+/// reference code
+// function test(){
+  
+//   return aNumbers[Math.floor(Math.random() * aNumbers.length)];
+// }
+// console.log(test());
+
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
