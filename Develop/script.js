@@ -1,8 +1,24 @@
 // Assignment code here
-var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R", "S","T","U","V","W","X","Y","Z"];
+var lowerCase = "abcdefghijklmnoqrstuvwxyz";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var aNumbers = "1234567890";
-var specialCharacters = "!@#$%^&*()"
+var specialCharacters = "!@#$%^&*()";
+
+function randomUpCase(){
+  return upperCase[Math.floor(Math.random() * upperCase.length)]
+};
+
+function randomLowerCase(){
+  return lowerCase[Math.floor(Math.random() * lowerCase.length)]
+};
+
+function randomNumber(){
+  return aNumbers[Math.floor(Math.random() * aNumbers.length)]
+};
+
+function randomSpCharacter(){
+  return specialCharacters[Math.floor(Math.random() * specialCharacters.length)]
+};
 
 
 function generatePassword(){
@@ -14,27 +30,22 @@ var passLength = window.prompt("Pick between 8-128 for a password")
  }
 
  var upCase = window.confirm("Would you like Uppercase Characters");
- 
+ // if (upCase === true) include uppercase letters
+ // 
 
- var lowerCase = window.confirm("Would you like Lowercase Characters")
+ var lowCase = window.confirm("Would you like Lowercase Characters")
 
+// if (lowCase === true) include lower case
+//
 
-
- var Numz = window.confirm("Would you like Numbers")
-
+ var numbs = window.confirm("Would you like Numbers")
+//if (numbs === true) include numbers
 
 
  var sCharacters = window.confirm("Would you like Special Characters")
+//if (sCharacters === true) include special characters
 
-
-}
-
-/// reference code
-// function test(){
-  
-//   return aNumbers[Math.floor(Math.random() * aNumbers.length)];
-// }
-// console.log(test());
+};
 
 
 // Get references to the #generate element
