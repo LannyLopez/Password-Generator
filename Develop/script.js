@@ -28,10 +28,10 @@ var passLength = window.prompt("Pick between 8-128 for a password")
   return 
    
  }
-
+console.log(passLength)
  var upCase = window.confirm("Would you like Uppercase Characters");
  // if (upCase === true) include uppercase letters
- // 
+ 
 
  var lowCase = window.confirm("Would you like Lowercase Characters")
 
@@ -45,6 +45,11 @@ var passLength = window.prompt("Pick between 8-128 for a password")
  var sCharacters = window.confirm("Would you like Special Characters")
 //if (sCharacters === true) include special characters
 
+
+//tell user that they must have at least one option chosen
+if (!upCase && !lowCase && !numbs && !sCharacters){
+window.alert("Please chose at least one option")
+return };
 };
 
 
